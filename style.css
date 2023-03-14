@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellowgreen;
+    height: 5rem;
+}
+
+header h1 {
+    padding: 1rem;
+    white-space: nowrap;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+header input {
+    height: 2rem;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 5px 5px 0px 0px aquamarine;
+}
+
+header .btns {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+    ;
+}
+
+.btns button {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: azure
+}
+
+.btns button:nth-child(1) {
+    background-color: brown;
+}
+
+.btns button:nth-child(2) {
+    background-color: black;
+}
+
+.btns button:nth-child(3) {
+    background-color: red;
+}
+
+@media screen and (max-width: 575px) {
+    header input {
+        display: none;
+    }
+}
+
+/* Categories */
+.categoryWrapper {
+    padding: 20px;
+    background-color: cornsilk;
+    width: 100%;
+    margin: auto;
+}
+
+.categoryWrapper h1 {
+    text-align: center;
+}
+
+.categoryList {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 1rem;
+
+}
+
+.category {
+    max-width: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.category span {
+    position: absolute;
+    bottom: 10px;
+    background-color: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+@media screen and (min-width: 575px) {
+    .category {
+        min-width: 500px;
+    }
+}
