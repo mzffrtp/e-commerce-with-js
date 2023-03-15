@@ -108,7 +108,73 @@ header .btns {
 }
 
 @media screen and (min-width: 575px) {
-    .category {
-        min-width: 500px;
-    }
+    
 }
+/* products styling start*/
+.productsWrapper{
+    padding: 30px;
+}
+
+.productList{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 5rem;
+}
+
+.product{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 10px;
+    background-color:cyan;
+}
+
+.productWrapper h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.product img{
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 2rem;
+
+}
+
+.product p{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 3px 0px;
+    text-align: center;
+}
+
+.productInfo{
+    background-color: crimson;
+    color:white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  5px 10px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 95%;
+
+}
+
+.productInfo span{
+    letter-spacing: 1px;
+}
+.productInfo button{
+    background-color: yellow;
+    color: tomato;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+}
+
+/* products styling end*/
