@@ -17,7 +17,7 @@
         </div>
         <input type="text" placeholder="type to search ..." />
         <div class="btns">
-            <button>Cart</button>
+            <button id="cart">Cart</button>
             <button>Sign in</button>
             <button>Login</button>
         </div>
@@ -35,6 +35,25 @@
             <div class="productList"></div>
         </div>
         <!-- Products End-->
+        <!-- Modal Start-->
+        <div class="modalWrapper active">
+            <div class="modal">
+                <img id="closeBtn" src="./imgs/close.png">
+                <h2 id="cartName">Cart</h2>
+                <div class="emptyCart">
+                    <img id="emptyCart" src="./imgs/empty.png">
+                    <h4>Empty Cart</h4>
+                </div>
+
+                <div class="cartItemWrapper"></div>
+                <div class="totalWrapper">Total Price: <span id="total"></span> $</div>
+            </div>
+            
+
+        </div>
+        <!-- Modal End-->
+
+
 
 
     </main>
