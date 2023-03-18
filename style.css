@@ -178,8 +178,8 @@ gap: 4rem;
 }
 
 /* products styling end*/
-/* modal start*/
 
+/* modal start*/
 .modalWrapper{
     width: 100%;
     height: 100vh;
@@ -231,6 +231,12 @@ gap: 4rem;
     color:brown
 }
 
+#addtoCart:hover{
+    background-color: rgb(9, 9, 9);
+    color:rgb(228, 245, 119);
+    font-weight: bolder;
+
+}
 .emptyCart{
     position: absolute;
     bottom:0px;
@@ -251,4 +257,14 @@ gap: 4rem;
     color: crimson;
 }
 
+@media screen and (min-width: 575px) {
+    #cartName {
+        margin-right: 21rem;
+    }
+}
+
+.fall{
+    transform: translateY(100px) rotateZ(20deg);
+    opacity: 0;
+}
 /* modal end*/
